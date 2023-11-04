@@ -2,7 +2,10 @@ import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 // import "../Styles/main.css"; 
 
-import { useState, useEffect, useContext } from "react"
+import { useState, useEffect, useContext } from "react" 
+// import logo from "../public/images/logo/logo.jpg"
+import Image from 'next/image';
+
 // import { Menu } from "antd"
 // import Link from "next/link" 
 // import {
@@ -61,11 +64,15 @@ const Navbar =()=> {
 	return (
 		<header
         >
-            <a href="/" style={{textDecoration: 'none', fontWeight: 700}}>
-			<h3>
-                 SCOVERS 
-            </h3> 
-            </a> 
+            <div>
+                {/* <img src={logo} alt="logo" style={{ height: 30, marginRight: 8 }} /> */}
+                <Image src="/images/logo/logo.jpg" alt="logo" width={30} height={30} /> {" "}
+                <a href="/" style={{textDecoration: 'none', fontWeight: 700}}>
+                    <h5 style={{marginTop: 10}}>
+                        COVERS 
+                    </h5> 
+                </a> 
+            </div>
 
 			<nav ref={navRef}> 
 

@@ -6,14 +6,16 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import LoadingBox from '../components/layouts/loadingBox.js'; 
 
 const Courses = ({ courses }) => {
     const router = useRouter();
     const { destination } = router.query;
+    const [loading, setLoading] = useState(false); // Add loading state
 
     // Filter courses based on various fields
     const filteredCourses = courses.filter((course) => {
-        const searchQuery = destination.toLowerCase();
+        const searchQuery = destination.toLowerCase(); 
 
         // Check if the name, instructor name, instructor location, or category contains the search query
         return (
@@ -22,10 +24,10 @@ const Courses = ({ courses }) => {
             (course.instructor && course.instructor.location && course.instructor.location.toLowerCase().includes(searchQuery)) ||
             (course.category && course.category.toLowerCase().includes(searchQuery))
         );
-    });
+    }); 
 
     useEffect(() => {
-        if (filteredCourses.length === 0) {
+        if (destination && filteredCourses.length === 0) {
             // Show a toast message if no courses are found
             toast.error('No courses found. Redirecting to the home page...', {
                 position: 'top-center',
@@ -33,11 +35,11 @@ const Courses = ({ courses }) => {
                 onClose: () => {
                     router.push('/'); // Redirect to the home page
                 },
-            });
+            }); 
         }
-    }, [filteredCourses, router]);
+    }, [destination, filteredCourses, router]);
 
-    return (
+    return ( 
         <>
             <Header />
             <hr />
@@ -50,9 +52,7 @@ const Courses = ({ courses }) => {
                 </h1>
 
             </div> */}
-
-            
-            <div className='container-fluid'>
+            {loading ? <LoadingBox /> : (<div className='container-fluid'>
                 <div className='row'>
                     {filteredCourses.map((course) => (
                         <div key={course._id} className='col-md-4'>
@@ -60,7 +60,7 @@ const Courses = ({ courses }) => {
                         </div>
                     ))}
                 </div>
-            </div>
+            </div>)}
         </>
     );
 };

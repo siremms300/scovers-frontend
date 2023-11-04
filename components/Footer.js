@@ -3,6 +3,7 @@ import { BsTwitter } from "react-icons/bs";
 import { SiLinkedin } from "react-icons/si";
 import { BsYoutube } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -44,17 +45,19 @@ const Footer = () => {
           display: "flex",
           flexDirection: "column",
           marginRight: "20px",
-        }}>
-          <span style={{ marginBottom: "10px" }}>About us</span>
+        }}> 
+          <span style={{ marginBottom: "10px"}}>
+          <Link href='/about' className='text-danger' style={{ textDecoration: "none", color: "white" }}>About us</Link> 
+          </span>
           <span style={{ marginBottom: "10px" }}>Contact us</span>
           <span style={{ marginBottom: "10px" }}>Institutions</span>
           <span style={{ marginBottom: "10px" }}>Testimonials</span>
         </div>
         {/* <div className="footer-section-columns" style={{
           display: "flex",
-          flexDirection: "column",
+          flexDirection: "column", 
           marginRight: "20px",
-        }}>
+        }}> 
           <span style={{ marginBottom: "10px" }}>+2347037060212</span>
           <span style={{ marginBottom: "10px" }}>info@scovers.org</span>
         </div> */} 
