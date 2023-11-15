@@ -35,11 +35,11 @@ export const awrapper = [
     data: "50",
     title: "STUDENTS",
   },
-  {
-    cover: "https://img.icons8.com/ios/80/ffffff/macbook-idea--v3.png",
-    data: "27",
-    title: "COURSES",
-  },
+  // {
+  //   cover: "https://img.icons8.com/ios/80/ffffff/macbook-idea--v3.png",
+  //   data: "27",
+  //   title: "COURSES",
+  // },
 ]
 export const coursesCard = [
   {

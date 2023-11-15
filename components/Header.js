@@ -61,7 +61,7 @@ const Header = ()=> {
                         subtitle="WELCOME TO SCOVERS"
                         title="Your gateway to global education"
                     /> 
-                        <p className='p-class'> Welcome to Scovers Education </p> 
+                        {/* <p className='p-class'> Welcome to Scovers Education </p>  */}
                         <div className='button'>
                             <button className='primary-btn'>
                             {/* EXPLORE COURSES <i className='fa fa-long-arrow-alt-right'></i> */}

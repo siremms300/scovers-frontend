@@ -66,7 +66,7 @@ const CoursePage = () => {
               alignItems: 'center',
             }}
           >
-            <h2>No courses found</h2>
+            <h2>Courses are currently being uploaded. Please check back later</h2>
           </Box>
         ) : (
           <div className="row">
