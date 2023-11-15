@@ -361,6 +361,435 @@ header {
     border-radius: 2px;
 } 
 
+/* NEW HOMEPAGE DESIGN */ 
+.hero {
+    /* background-image: url("/images/bg.webp"); */
+    background-image: url("/images/backg.gif");
+    /* background-size: cover;
+    background-attachment: fixed;
+    position: absolute; */
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    z-index: -1;
+    width: 100%;
+    height: 80vh;
+
+    padding-top: 10px;
+    /* top: 0; 
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    padding-top: 20px;
+    padding-right: 50px; */
+    color: #f6f7f8;
+}
+
+button {
+    border: none;
+}
+
+.row {
+    width: 50%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #fff; 
+    color: #1eb2a6; 
+    font-weight: 600;
+    border: none; 
+    margin: 30px 10px 0 0; 
+    border-radius: 3px; 
+    cursor: pointer;
+    box-shadow: 0 24px 36px -11px rgba(0 0 0 /9%); 
+} 
+
+button i {
+    margin-left: 20px;
+} 
+
+button:hover {
+    box-shadow: none;
+} 
+
+.primary-btn {
+    background: #1e6fb2;
+    color: #fff;
+} 
+
+#headings {
+    text-align: center;
+    padding: 40px 0;
+} 
+
+#headings h3 {
+    font-weight: 600;
+    letter-spacing: 1px; 
+    color: #1e6fb2; 
+    text-transform: uppercase; 
+}
+
+#headings h1 {
+    font-size: 45px;
+    margin: 20px 0; 
+    text-transform: capitalize;
+} 
+
+.p-class {
+    line-height: 30px; 
+    font-size: 18px;
+} 
+
+.hero #headings h3 {
+    color: #fff;
+}
+
+.hero #headings {
+    text-align: left;
+    margin: 0; 
+    padding: 0;
+} 
+
+/* ABOUTCARD OF NEW HOME PAGE */ 
+/* .aboutHome{
+    height: auto;
+}
+
+.aboutHome #heading {
+    text-align: left; 
+    padding: 0;
+} 
+
+.aboutHome .leftt img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+.aboutHome .rightt {
+    padding: 80px 50px;
+} */ 
+
+
+/* NEW DESIGN */
+/* .aboutHome .rightt .items {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.aboutHome .rightt .items .flexSB {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutHome .rightt .items .img {
+    width: 20%; 
+}
+
+.aboutHome .rightt .items .text {
+   
+} */
+
+
+/* .aboutHome #headings {
+    text-align: left;  
+    padding: 0;
+}  */
+
+
+
+
+.aboutHome .rightt .items {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.aboutHome .rightt .items .flexSB {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.aboutHome .rightt .items .img {
+    width: 100%; /* Full width by default */
+    max-width: 20%; /* Adjust the max-width as needed */
+    box-sizing: border-box; /* Include padding and border in the width */
+    margin-bottom: 20px; /* Add some space between items */
+}
+
+.aboutHome .rightt .items .text {
+    width: calc(80% - 20px); /* Adjust the width as needed */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .aboutHome .rightt .items {
+        flex-direction: column; /* Display items vertically on smaller screens */
+    }
+
+    .aboutHome .rightt .items .img {
+        max-width: -50%; /* Full width for smaller screens */
+        margin: 10px;
+    }
+
+    .aboutHome .rightt .items .text {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+
+.awrapper {
+    background-image: url("/images/wrapper.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 20vh;  
+    color: #f6f7f8;
+    align-items: center;
+}
+
+.awrapper .boxes {
+    padding: 20px 0;
+    margin-left: 10px;
+}
+
+
+
+.awrapper h1 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.awrapper h3 {
+    font-size: 18px;
+} 
+
+.grids {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.boxes {
+    /* Your existing styles remain the same */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* NEWSLETTER  */
+/* .newsletter {
+    background-color: #007bff; 
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 20px; 
+    color: #fff;
+}
+
+.newsletter .left,
+.newsletter .righter {
+    padding-right: 50px;
+} 
+
+.newsletter h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.newsletter .righter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */ 
+
+
+/* Newsletter.css */
+
+.newsletter {
+    background-color: #007bff;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .newsletter .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .newsletter .left,
+  .newsletter .right {
+    padding: 0;
+    text-align: center; /* Center text on mobile */
+  }
+  
+  .newsletter h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  .newsletter .right {
+    margin-top: 15px; /* Add some space between the text and the input on mobile */
+  }
+  
+  .newsletter .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items on mobile */
+  }
+  
+  .newsletter input {
+    width: 100%;
+    padding: 10px;
+    /* margin-bottom: 10px; */
+  }
+  
+  .newsletter button {
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px;
+    border: none; 
+    cursor: pointer;
+  }
+  
+  /* Media query for responsiveness */
+  @media (min-width: 768px) {
+    .newsletter .container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .newsletter .left,
+    .newsletter .right {
+      width: 48%; /* Adjust the width as needed */
+    }
+  } 
+
+
+  /* PROGRAMS STYLE */
+  .Programs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+    padding: 0 2rem;
+  }
+  
+  .programs-header {
+    display: flex;
+    gap: 5rem;
+    font-weight: bold;
+    font-style: 3rem;
+    justify-content: center;
+    color: rgb(240, 30, 30); 
+    text-transform: uppercase; 
+    font-style: italic;
+    font-size: 30px;
+  }
+
+  .programs-categories {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .categorys {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    padding: 1.5rem;
+    gap: 1rem; 
+    color: white; 
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .categorys>:nth-child(1) 
+  {
+    width: 2rem;
+    height: 2rem;
+    fill: white; 
+  } 
+
+  .categorys>:nth-child(2) 
+  {
+    font-size: 1rem;
+    font-weight: bold; 
+  } 
+
+  .categorys>:nth-child(3) 
+  {
+    font-size: 0.9rem;
+    line-height: 25px;
+  } 
+
+  .join-now {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .join-now>img {
+    width: 1rem;
+  } 
+
+  .categorys:hover {
+    background: linear-gradient(to right, rgb(29, 29, 29), rgb(49, 89, 219));
+    color: white;
+    cursor: pointer;
+  }
+
+  
+
+  @media (max-width: 768px) {
+    .programs-categories {
+      flex-direction: column;
+    }
+  
+    .categorys {
+      width: 100%; /* Take full width on smaller screens */
+    }
+  }
+
+  /* REASONS */ 
+  .Reasons {
+    display: flex;
+    padding: 0 2rem; 
+    grid-template: 2rem; 
+  }
+
+
+/* NEW HOME PAGE RESPONSIVENESS */ 
+@media screen and (max-width: 768px) {
+    .margin {
+        height: 1vh;
+    } 
+
+    .hero {
+        background-position: right; 
+        padding-top: 50%;
+        height: 80vh;
+    }
+
+    .hero .row {
+        width: 100%;
+    }
+}
+
+
+
+
 /* ABOUT US RESPONSIVENESS */ 
 @media screen and (max-width:768px) {
     .about {
@@ -437,6 +866,8 @@ nav {
 	header .nav-btn {
 		visibility: visible;
 		opacity: 1;
+        
+        margin-top: -0.5rem;
 	}
 
 	header nav {

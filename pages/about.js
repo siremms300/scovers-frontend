@@ -38,7 +38,7 @@ const About = () => {
                     <div className={toggleTab === 3 ? 'single-tab active-tab': 'single-tab'}
                         onClick={()=> toggleState(3)} 
                     >
-                        <h2>Track record</h2>
+                        <h2>Our mission</h2>
                     </div> 
 
                     {/* <div className='single-tab'>
@@ -49,15 +49,21 @@ const About = () => {
                 <div className='tab-content'>
                     {/* About content */} 
                     <div className={toggleTab === 1 ? 'content active-content' : 'content'}>
-                        <h2>Our story</h2> 
+                        <h2>Who we are</h2> 
                         <p>
-                            Welcome to Scovers - Your Gateway to Global Learning. With a decade of dedicated service, Scovers has emerged as a prominent leader in the realm of international education.
+                        Scovers Education is an organization that serves as a broker, ensuring
+Partnering Universities and prospective students meeting their requirement meet.
+As an international firm we are focused on student recruitment and helping
+partners gain visibility within the African Space.
+Sovers which mean Schooling Overseas is the goal. We aspire to remain the
+major source of information and medium via which new and continuing students
+from around Africa whose talent and ambition matches the interest of our
+partnering institution.
 
-                            Established by a team of passionate individuals sharing a vision for enabling global opportunities, Scovers has become synonymous with facilitating life-changing educational experiences abroad. Our core mission is clear: to empower individuals with the knowledge and skills needed to succeed in an interconnected world.
-
-                            What sets us apart is our relentless commitment to providing personalized and holistic support for students pursuing overseas education. 
+With partnership with Universities around the world, and programs ranging from
+certificate to PHD, Scovers Education is able to handle any kind of application.
                          {/* </p> */}
-                            <h3>We recognize your uniqueness</h3>
+                            {/* <h3>We recognize your uniqueness</h3>
                             <p>
                                 Recognizing the unique aspirations and circumstances of each individual, our seasoned counselors leverage their expertise in global education systems to craft tailor-made solutions that align with your goals.
 
@@ -71,20 +77,32 @@ const About = () => {
                                 At Scovers, our passion is to help you realize your dreams and shape a brighter future. Embark on an extraordinary voyage with us, and together, we'll unlock a world of possibilities.
 
                                 Uncover, learn, and thrive with Scovers. Your global future begins here.
-                            </p>
+                            </p> */}
                         </p>
                     </div>
 
                     {/* Parnerships content */} 
                     <div className={toggleTab === 2 ? 'content active-content' : 'content'}>
-                        <h2>Our Partnerships</h2> 
+                        <h2>Scovers ENGAGES THE MARKET USING IN-COUNTRY REPS</h2> 
                         <p>
-                            Scovers proudly collaborates with renowned universities worldwide to provide students with exceptional 
-                            educational opportunities. Among our distinguished partners, Royal Roads University stands out as a 
-                            beacon of academic excellence. These valuable partnerships enable us to offer an extensive array of programs, 
-                            ensuring our students access top-tier education globally.
-                        </p> 
-                        <div className='partners-row'>
+                        Scovers Education Marketing and Recruiting provides your university with
+necessary networking to states and communities. This is made possible with
+partnerships within country reps and sub agents.
+                        </p>  
+
+                        <h3>RECRUITMENT STRATEGY</h3>
+                            <p>
+                            An effective strategy must consider culture and mindset of the target, as such we
+adopt the following to guarantee a profitable result;
+a. Social Media
+b. Radio sessions
+c. Educational Fairs
+d. Online Webinars
+e. Word of mouth Recommendations
+f. Referrals
+g. Lots more
+                            </p>
+                        {/* <div className='partners-row'>
                             <div className='partners-column'>
                                 <div className='progress-wrap'>
                                     <h3>Royal Roads University</h3> 
@@ -105,8 +123,8 @@ const About = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                            </div> 
+                        </div> */}
                     </div> 
 
                     {/* track record content */}
@@ -114,7 +132,10 @@ const About = () => {
                     <div className={toggleTab === 3 ? 'content active-content' : 'content'}> 
 
                         <div className='exp-column'>
-
+                            <h2>Our mission</h2>
+                        <p>The mission of Scovers Education is to provide our university partners with a
+global network of high-quality prospective students to partnering universities
+using high performing results.</p>
                         </div>
                         
                     </div> 
